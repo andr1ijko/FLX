@@ -1,0 +1,148 @@
+@media print {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  h2.tm-section-title{
+    color: blue;
+  }
+  .tm-sidebar, #about, section:nth-child(n+3) {
+  display: none;
+  }
+  .carousel-content .flex-item .tm-section-title{
+    letter-spacing: 5px;
+  }
+  h2+p {
+    font-style: italic;
+  }
+  p::first-letter{
+    font-size: 30px;
+    color: #87CEFA;
+  }
+  .tm-team-description-container .tm-section-description {
+    line-height: 30px;
+    text-indent: 25px;
+  }
+  .flex-2-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-item img{
+    width: 50%;
+    height: 50%;
+  }
+  section .tm-content-box {
+    position: relative;
+    left: 60px;
+  }
+  .tm-team-description-container{
+    width: 600px;
+  }
+  .tm-banner{
+    width: 550px;
+    position: relative;
+    left: 60px;
+  }
+}
+@media screen{
+.box-bg:hover{
+  background-color: lightskyblue;
+}
+.tm-box-bg-title:hover{
+  color: white;
+  font-weight: bold;
+}
+p::first-letter{
+  color: lightskyblue;
+  font-size: 30px;
+}
+.tm-main-nav, .tm-content-box, .blocks  {
+  box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.8);
+}
+.tm-banner{
+  background-color: #f5f5f5;
+  }
+.tm-banner-inner{
+  background-color: white;
+}
+.blocks .flex-2-col, .blocks .tm-content-box{
+  box-shadow: none;
+}
+section::before{
+  content: '';
+	border-top: 30px solid lightskyblue;
+	border-right: 250px solid transparent;
+}
+.carousel-content .flex-item .tm-section-title{
+  color: gainsboro;
+  letter-spacing: 5px;
+}
+.flex-2-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2+p {
+  font-style: italic;
+}
+.tm-team-description-container .tm-section-description {
+  line-height: 30px;
+  text-indent: 25px;
+}
+.padding-medium ol a:visited{
+  text-decoration: underline;
+}
+.padding-medium .text::after{
+  content: "New";
+  color: red;
+  display: inline-block;
+  font-size: 10px;
+  vertical-align: top;
+}
+.padding-medium ol a:hover{
+  text-decoration-style: double;
+  color: lightskyblue;
+}
+.padding-medium ol a{
+  color: black;
+}
+.box-work{
+  padding: 8px;
+}
+.box:nth-child(2n){
+  background-color: rgb(235, 235, 235);
+}
+.box-work p{
+  font-size: 15px;
+}
+.box-work p::first-letter{
+  color: black;
+  font-size: 25px;
+}
+.box-work h2{
+  font-size: 30px;
+}
+.mandatory-field::after{
+  content: '*';
+  color: red;
+  font-weight: bold;
+}
+
+.submit-btn{
+  background-color: white;
+  border: 1px solid lightskyblue;
+  color: lightskyblue;
+  width: 120px;
+  border-radius: 0px;
+  float: right;
+}
+.submit-btn:hover{
+  background-color: lightskyblue;
+  color: white;
+  border: 1px solid DeepSkyBlue;
+}
+.tm-main-nav li:hover{
+  background-color: #f5f5f5;
+}
+}
