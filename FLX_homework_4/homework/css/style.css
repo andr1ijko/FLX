@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  }
+body {
+    max-width: 1600px;
+    min-width: 900px;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.logo{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 45px;
+    top: 30px;
+}
+.logo a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #F3F3F3 ;
+    cursor: pointer;
+}
+header{
+    
+    height: 740px;
+    background: url(../img/sample2.jpg) no-repeat center top/cover;
+}
+.sign-in{
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 1330px;
+}
+.login,.signup{
+    background-color: transparent;
+    color: #F3F3F3;
+    margin-left: 50px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 15px;
+}
+.brand-name{
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    text-align: center;
+}
+.brand-name p:nth-child(1){
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 35px;
+}
+.brand-name .big{
+    font-size: 70px;
+}
+.brand-name p:nth-child(2){
+    font-size: 12px;
+    color: #F3F3F3;
+}
+.nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav a{
+    display: inline-block;
+    margin-top: 554px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 2px solid #F3F3F3;
+    padding: 12px 65px;
+    font-size: 12px;
+    background: rgba(0,0,0,0.5);
+}
+header::after{
+    content: '';
+    border-top: 175px solid black;
+    border-left: 1583px solid transparent;
+    position: absolute;
+    top: 740px;
+}
+.content-1{
+    background: #F3F3F3 ; 
+    height: 500px;
+}
+.content-1 .column-1{
+    position: relative;
+    left: 800px;
+}
+.content-1 .column-1 p{
+    color: #FFFFFF;
+    width: 770px;
+    font-size: 12px;
+    z-index: 1;
+}
+.content-1 .column-2{
+    position: relative;
+    left: 40px;
+    top: 30px;
+    width: 600px;
+}
+.content-1 .column-2 p{
+    width: 770px;
+    font-size: 15px;
+    width: 350px;
+}
+.content-1 .column-2 p b{
+    font-size: 15px;
+}
+.content-1 .column-3 h4{
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-weight: normal;
+}
+.content-1 .column-3 .img-content-1 img{
+    width: 47.5%; 
+}
+.content-1 .column-3 .img-content-1 {
+    position: relative;
+    top: 90px;
+    left: 40px;
+    max-height: 245px;
+    overflow: hidden;
+}
+.content-1 .column-3 .img-content-1 p{
+    display: inline-block;
+    position: relative;
+    left: -740px;
+    top: -225px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.content-1 .column-3 .img-content-1 .bold{
+    font-size: 12px;
+    font-weight: bold;
+}
+.content-1 .column-3 .img-content-1 a{
+    position: relative;
+    top: -415px;
+    left: -215px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background: rgba(0,0,0,0.5);
+    font-size: 13px;
+    padding: 5px 8px;
+}
+.content-1 .column-3 .text-content-1{
+    max-width: 41%;
+    position: absolute;
+    top: 930px;
+    left: 900px;
+}
+.content-1 .column-3 .text-content-1 .one-column-1 p{
+    font-size: 12px;
+    text-align: center;
+}
+.content-1 .column-3 .text-content-1 .one-column-1{
+    margin-top: 50px;
+}
+.content-2{
+    background: #FFFFFF;
+    height: 250px;
+}
+.content-2 .two-column-1{
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.8);
+    width: 260px;
+    height: 130px;
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.content-2 .two-column-1 p{
+    font-size: 12px;
+    padding: 15px 15px;
+}
+.content-2 .two-column-1 .explore{
+    background-color: #097774;
+    color: #F3F3F3;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+    padding: 5px 0;
+    width: 230px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.content-3{
+    background-color: #F3F3F3;
+    height: 150px;
+}
+.content-3 .third-column-1{
+    padding: 30px 20px;
+}
+.content-3 .third-column-1 p{
+    font-size: 12px;
+}
+.content-3 .third-column-2,
+.content-3 .third-column-3{
+    display: inline-block;
+}
+.content-3 .third-column-2 h5{
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 1100px;
+}
+.content-3 .third-column-2 .bold{
+    font-weight: bold;
+}
+.content-3 .third-column-3 input[type=email]{
+    background: #F3F3F3;
+    border: 1px solid black;
+    font-size: 11px;
+    color: black;
+    padding: 6px;
+}
+.content-3 .third-column-3 input[type=button]{
+    background-color: #097774;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 6px;
+    cursor: pointer;
+}
+.wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.wrapper article{
+    width: 395px;
+    margin-top: 90px;
+    display: inline-block;
+    vertical-align: top;
+}
+.wrapper article h4{
+    margin-bottom: 20px;
+}
+.wrapper article p{
+    font-size: 12px;
+    line-height: 1.2em;
+    color: #9E9E9E;
+}
+.wrapper article p i{
+    font-size: 12px;
+}
+.wrapper .contact p{
+    line-height: 1.7em;
+}
+.wrapper .hours{
+    color: #F3F3F3;
+    margin-top: 8px;
+}
+.wrapper .contact{
+    width: 340px;
+}
+.wrapper .newsletter{
+    width: 350px;
+}
+.wrapper .newsletter input[type=email]{
+    background: #F3F3F3;
+    border: 1px solid black;
+    font-size: 11px;
+    color: black;
+    padding: 6px;
+}
+.wrapper .newsletter input[type=button]{
+    background-color: #097774;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 6px;
+    cursor: pointer;
+}
+.wrapper hr{
+    margin-top: 90px;
+}
+.wrapper .footer .copyrigth{
+    display: inline-block;
+    margin: 10px 0;
+}
+.wrapper .footer .copyrigth p{
+    color: #9E9E9E;
+    font-size: 12px;
+}
+.wrapper .footer-nav{
+    display: inline-block;
+    position: relative;
+    left: 1195px;
+}
+.wrapper li{
+    display: inline-block;
+    color: #9E9E9E;  
+}
+.wrapper li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-left: 15px;
+}
