@@ -1,0 +1,257 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+
+body {
+  font-family: roboto;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+/* Your styles go here */
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #0b192f;
+  width: 90%;
+  margin: 0 auto;
+}
+header{
+  background-color: #162b4d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 80px;
+}
+.logo{
+  padding-left: 20px;
+}
+header .logo .travel{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 100;
+}
+header .logo .blog{
+  color: #d12767;
+  font-size: 35px;
+  font-weight: 100;
+}
+.navigation ul{
+  padding-right: 40px;
+}
+.navigation ul li {
+  display: inline-block;
+  padding: 30px 10px;
+  height: 80px;
+  width: 80px;
+}
+.navigation ul li:hover {
+  background: #283d5f;
+}
+.navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 200;
+  margin: 0 auto;
+}
+.toggle {
+  display: none;
+}
+main,.section-1 article{
+  display: flex;
+}
+.section-1 article {
+  cursor: pointer;
+}
+.section-1 {
+  width: 75%;
+  margin-right: 20px;
+}
+.section-2 {
+  width: 25%;
+}
+.section-1 .post{
+  width: 50%;
+}
+.section-2 article img{
+  width: 100%;
+  height: 50%;
+}
+.section-1 article:nth-child(even){
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.section-1 article:nth-child(odd) .post{
+  flex-direction: row-reverse;
+}
+.post{
+  box-sizing: border-box;
+  display: flex;
+}
+.text{
+  padding: 15px;
+}
+.post-date{
+  padding: 10px;
+  text-align: center;
+  color: #b8b8b8;
+}
+.img-section, .post{
+  width: 50%;
+}
+.img-section img{
+  width: 100%;
+  height: 100%;
+}
+.section-1 h2{
+  color: #fff;
+  font-weight: 100;
+  font-size: 45px;
+  line-height: 1em;
+}
+.section-1 p{
+  color: #b8b8b8;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.section-1 .post-date p:nth-child(1){
+  font-size: 45px;
+  font-weight: 100;
+  margin-top: 0;
+}
+.section-1 .post-date p:nth-child(3){
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: -50px;
+}
+.section-1 .post-5 .post-info{
+  display: flex;
+}
+.section-2 article {
+  background: #fff;
+  color: #000;
+  margin-bottom: 20px;
+}
+.news{
+  padding: 20px;
+  box-sizing: border-box;
+}
+.news .post-description{
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.news .description{
+  color: #b8b8b8;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.img-section img:hover,
+.text:hover{
+  filter: opacity(50%);
+}
+footer{
+  background-color: #162b4d;
+  margin-top: 25px;
+  display: flex;
+}
+footer p{
+  color: #b8b8b8;
+  font-size: 15px;
+  font-weight: 100;
+}
+footer .footer-line-1{
+  width: 107%;
+  padding: 10px 30px;
+}
+footer .footer-line-2{
+  padding: 10px 20px;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .navigation {
+    margin: auto;
+    padding: 10px;
+  }
+  .navigation ul {
+    display: none;
+  }
+  .logo {
+    padding: 30px;
+  }
+  .wrap {
+    width: 100%;
+    padding: 0 9px;
+    box-sizing: border-box;
+  }
+  .section-1 article,
+  .section-1 article:nth-child(even) {
+    flex-direction: column;
+  }
+  .section-1 {
+    width: 60%;
+  }
+  .section-2 {
+    width: 40%;
+  }
+  .img-section {
+    width: 100%;
+  }
+  .section-1 article:nth-child(odd) .post,
+  .section-1 article:nth-child(even) .post {
+    padding: 30px 30px 0;
+    width: 100%;
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .section-1 article:nth-child(odd) .post-info,
+  .section-1 article:nth-child(even) .post-info {
+    padding: 30px 30px 0;
+    width: 100%;
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 18px;
+  }
+  footer p {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+  }
+  .toggle {
+    display: block;
+  }
+  .section-1, .section-2 {
+    width: 100%;
+  }
+  .navigation ul {
+    display: none;
+  }
+}
