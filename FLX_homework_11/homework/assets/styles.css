@@ -1,0 +1,34 @@
+/* Your styles goes here */
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+h1 {
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+input {
+    width: 89vw;
+    height: 26px;
+    margin: 0px 18px 30px 30px;
+    border: 1px solid #000;
+}
+li {
+    cursor: move;
+    width: 93.5vw;
+    max-width: 93.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+img {
+    position: absolute;
+    left: 50%;
+    top: 86%;
+    width: 75px;
+    height: 75px;
+}
